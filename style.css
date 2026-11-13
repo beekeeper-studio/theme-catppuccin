@@ -1,0 +1,120 @@
+.light-theme {
+  --cat-rosewater:      #dc8a78;
+  --cat-sky:            #04a5e5;
+  --cat-lavender:       #7287fd;
+  --cat-selected:       #7c7f9340; /* Overlay 2 @ 20% - 30% opacity */
+  --cat-searchmatch-bg: #1792994d; /* Teal with some opacity */
+  --cat-searchselected: #d20f3966; /* Red with some opacity */
+
+  --background:         #eff1f5; /* Base */
+  --base-accent:        #8839ef; /* Mauve */
+
+  --base-gray:          #9ca0b0; /* Overlay 0 */
+  --base-blue:          #1e66f5; /* Blue */
+  --base-green:         #40a02b; /* Green */
+  --base-yellow:        #df8e1d; /* Yellow */
+  --base-orange:        #fe640b; /* Peach */
+  --base-red:           #d20f39; /* Red */
+  --base-purple:        #8839ef; /* Mauve */
+  --base-pink:          #ea76cb; /* Pink */
+
+  --gray-1:             #dce0e8; /* Crust */
+  --gray-2:             #e6e9ef; /* Mantle */
+  --gray-3:             #eff1f5; /* Base */
+  --gray-4:             #ccd0da; /* Surface 0 */
+  --gray-5:             #bcc0cc; /* Surface 1 */
+  --gray-6:             #acb0be; /* Surface 2 */
+  --gray-7:             #9ca0b0; /* Overlay 0 */
+  --gray-8:             #8c8fa1; /* Overlay 1 */
+  --gray-9:             #7c7f93; /* Overlay 2 */
+  --gray-10:            #6c6f85; /* Subtext 0 */
+  --gray-11:            #5c5f77; /* Subtext 1 */
+  --gray-12:            #4c4f69; /* Text */
+}
+
+.dark-theme {
+  --cat-rosewater:      #f5e0dc;
+  --cat-sky:            #89dceb;
+  --cat-lavender:       #b4befe;
+  --cat-selected:       #9399b240; /* Overlay 2 @ 20% - 30% opacity */
+  --cat-searchmatch-bg: #94e2d54d; /* Teal with some opacity */
+  --cat-searchselected: #f38ba866; /* Red with some opacity */
+
+  --background:         #1e1e2e; /* Base */
+  --base-accent:        #cba6f7; /* Mauve */
+
+  --base-gray:          #6c7086; /* Overlay 0 */
+  --base-blue:          #89b4fa; /* Blue */
+  --base-green:         #a6e3a1; /* Green */
+  --base-yellow:        #f9e2af; /* Yellow */
+  --base-orange:        #fab387; /* Peach */
+  --base-red:           #f38ba8; /* Red */
+  --base-purple:        #cba6f7; /* Mauve */
+  --base-pink:          #f5c2e7; /* Pink */
+
+  --gray-1:             #11111b; /* Crust */
+  --gray-2:             #181825; /* Mantle */
+  --gray-3:             #1e1e2e; /* Base */
+  --gray-4:             #313244; /* Surface 0 */
+  --gray-5:             #45475a; /* Surface 1 */
+  --gray-6:             #585b70; /* Surface 2 */
+  --gray-7:             #6c7086; /* Overlay 0 */
+  --gray-8:             #7f849c; /* Overlay 1 */
+  --gray-9:             #9399b2; /* Overlay 2 */
+  --gray-10:            #a6adc8; /* Subtext 0 */
+  --gray-11:            #bac2de; /* Subtext 1 */
+  --gray-12:            #cdd6f4; /* Text */
+}
+
+.light-theme,
+.dark-theme {
+  --editor-bg: var(--gray-3);
+  --editor-gutter-bg: var(--gray-3);
+  --editor-fatcursor-bg: var(--cat-rosewater);
+  --editor-cursor-bg: var(--cat-rosewater);
+  --editor-selected-bg: var(--cat-selected);
+  --editor-matchingselection-bg: var(--cat-selected);
+  --editor-matchingbracket-bg: var(--cat-selected);
+  --editor-foldgutter-fg: var(--gray-8);
+  --editor-guttermarker-subtle-fg: var(--gray-8);
+  --editor-linenumber-active-fg: var(--cat-lavender);
+  --editor-searchmatch-bg: var(--cat-searchmatch-bg);
+  --editor-searchmatch-selected-bg: var(--cat-searchselected);
+  --editor-matchingbracket-fg: var(--gray-12);
+  --editor-indent-marker-bg: var(--gray-4);
+  --editor-indent-marker-active-bg: var(--gray-6);
+  --editor-error-fg: var(--base-red);
+  --table-row-odd-bg: var(--gray-2);
+
+  --syntax-keyword: var(--base-purple);
+  --syntax-string: var(--base-green);
+  --syntax-comment: var(--gray-9);
+  --syntax-constant: var(--base-orange);
+  --syntax-function: var(--base-blue);
+  --syntax-type: var(--base-yellow);
+  --syntax-punctuation: var(--gray-9);
+  --syntax-variable: var(--gray-12);
+  --syntax-decorator: var(--base-yellow);
+  --syntax-link: var(--base-blue);
+  --syntax-diff: var(--base-red);
+  --editor-operator-fg: var(--cat-sky);
+  --editor-regexp-fg: var(--base-pink);
+  --editor-escape-fg: var(--base-pink);
+  --editor-bool-fg: var(--base-orange);
+  --editor-null-fg: var(--base-orange);
+  --editor-self-fg: var(--base-red);
+  --editor-attributeName-fg: var(--base-yellow);
+  --editor-heading-fg: var(--base-blue);
+  --editor-strikethrough-fg: var(--gray-8);
+  --mongo-shell-prompt-fg: var(--base-purple);
+  --mongo-shell-ansi-output-fg: var(--gray-12);
+
+  /* Vim panel (yoinked from solarized) */
+  --editor-vim-panel-insert-bg: rgb(from var(--base-green) r g b / 0.15);
+  --editor-vim-panel-insert-fg: var(--base-green);
+  --editor-vim-panel-visual-bg: rgb(from var(--base-blue) r g b / 0.15);
+  --editor-vim-panel-visual-fg: var(--base-blue);
+  --editor-vim-panel-replace-bg: rgb(from var(--base-red) r g b / 0.15);
+  --editor-vim-panel-replace-fg: var(--base-red);
+  
+}
