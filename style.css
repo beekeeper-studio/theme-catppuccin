@@ -75,6 +75,8 @@
   --editor-selected-bg: var(--cat-selected);
   --editor-matchingselection-bg: var(--cat-selected);
   --editor-matchingbracket-bg: var(--cat-selected);
+
+  --tab-bg: var(--gray-2);
   --editor-foldgutter-fg: var(--gray-8);
   --editor-guttermarker-subtle-fg: var(--gray-8);
   --editor-linenumber-active-fg: var(--cat-lavender);
@@ -116,5 +118,5 @@
   --editor-vim-panel-visual-fg: var(--base-blue);
   --editor-vim-panel-replace-bg: rgb(from var(--base-red) r g b / 0.15);
   --editor-vim-panel-replace-fg: var(--base-red);
-  
+
 }
